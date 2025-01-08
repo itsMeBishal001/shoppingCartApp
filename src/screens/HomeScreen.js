@@ -56,6 +56,11 @@ export default function HomeScreen() {
 }
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    // Ensure container is scrollable in web
+    overflow: "auto",
+  },
   centered: {
     flex: 1,
     justifyContent: "center",
@@ -63,5 +68,7 @@ const styles = StyleSheet.create({
   },
   listContainer: {
     padding: 8,
+    // On web, this may need a max height or overflow handling for scrolling
+    maxHeight: "100vh",
   },
 });
